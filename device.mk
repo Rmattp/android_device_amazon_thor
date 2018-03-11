@@ -1,9 +1,5 @@
 DEVICE_FOLDER := device/amazon/thor
 
-# Set dirty regions off
-ADDITIONAL_BUILD_PROPERTIES += \
-	hwui.render_dirty_regions=false
-
 # Disable ext sdcard
 PRODUCT_CHARACTERISTICS := \
 	tablet,nosdcard
@@ -18,10 +14,6 @@ $(call inherit-product-if-exists, vendor/amazon/adreno-330/adreno-330-vendor.mk)
 
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_FOLDER)/overlay
-
-ADDITIONAL_BUILD_PROPERTIES += \
-	ro.qcom.ad=1 \
-	ro.usb.pid=000c
 
 # configs
 PRODUCT_COPY_FILES += \
