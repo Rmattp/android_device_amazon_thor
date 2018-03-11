@@ -64,6 +64,8 @@ media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 
 hwui.render_dirty_regions=false
+debug.hwui.use_buffer_age=false
+
 ro.qcom.ad=1
 ro.usb.pid=000c
 
